@@ -1,0 +1,97 @@
+.login {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    transition: 0.2s ease-in-out;
+
+    &.closed {
+        right: -220px;
+
+        .login-toggle {
+            transform: rotate(0deg);
+        }
+    }
+
+    &-toggle {
+        color: #0F4C75;
+        background-color: #BBE1FA;
+        border: none;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin-right: 18px;
+        cursor: pointer;
+        transform: rotate(225deg);
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: white;
+            background-color: #3282B8;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        transition: 0.2s ease-in-out;
+
+        &-input {
+            color: #3282B8;
+            font-size: 1rem;
+            border: none;
+            border-radius: 16px;
+            padding: 12px;
+            margin-bottom: 8px;
+            outline: none;
+        }
+
+        &-submit {
+            border: none;
+            border-radius: 16px;
+            padding: 12px;
+            color: #0F4C75;
+            background-color: #BBE1FA;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                color: white;
+                background-color: #3282B8;
+            }
+        }
+
+    }
+
+    .logout {
+        display: flex;
+        flex-direction: column;
+        &-message {
+            color: white;
+            font-weight: bold;
+        }
+        &-button {
+            border: none;
+            border-radius: 16px;
+            padding: 12px;
+            color: #0F4C75;
+            background-color: #BBE1FA;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            
+            &:hover {
+                color: white;
+                background-color: #3282B8;
+            }
+        }
+    }
+}

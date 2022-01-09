@@ -1,13 +1,16 @@
 .messages {
     padding: 16px;
+
     .message {
         margin-bottom: 12px;
-        .author {
+
+        &-pseudo {
             font-weight: bold;
             color: #BBE1FA;
             margin-bottom: 8px;
         }
-        .content {
+        
+        &-content {
             display: inline-block;
             color: #3282B8;
             background-color: white;

@@ -8,6 +8,7 @@ import "./style.scss";
 
 const Form = () => {
   const inputValue = useSelector((state) => state.inputValue);
+  const loginPseudo = useSelector((state) => state.login.pseudo);
   const dispatch = useDispatch();
 
   return (
@@ -19,16 +20,17 @@ const Form = () => {
       }}
     >
       <input
-        className="input"
+        className="form-input"
         type="text"
         placeholder="Votre message..."
         value={inputValue}
+        disabled={!loginPseudo}
         onChange={(event) => {
           const message = event.target.value;
           dispatch(changeInputValue(message));
         }}
       />
-      <button className="button" type="submit">
+      <button className="form-submit" type="submit">
         <SendIcon />
       </button>
     </form>

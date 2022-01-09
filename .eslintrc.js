@@ -11,9 +11,8 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: "module",
   },
-  plugins: ["react", "prettier"],
+  plugins: ["react"],
   rules: {
-    "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
     "react/function-component-definition": [
       2,
@@ -25,5 +24,6 @@ module.exports = {
     "jsx-quotes": ["error", "prefer-double"],
     quotes: ["error", "double"],
     "operator-linebreak": ["error", "after"],
+    "react/jsx-one-expression-per-line": ["off"],
   },
 };

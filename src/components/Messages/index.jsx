@@ -9,8 +9,8 @@ const Messages = () => {
     <div className="messages">
       {messages.map((message) => (
         <div className="message">
-          <div className="author">{message.author}</div>
-          <div className="content">{message.content}</div>
+          <div className="message-pseudo">{message.pseudo}</div>
+          <div className="message-content">{message.content}</div>
         </div>
       ))}
     </div>

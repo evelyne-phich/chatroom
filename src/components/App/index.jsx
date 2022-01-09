@@ -5,7 +5,7 @@ import Form from "../Form";
 import Login from "../Login";
 
 const App = () => (
-  <div className="App">
+  <div className="app">
     <Messages />
     <Form />
     <Login />

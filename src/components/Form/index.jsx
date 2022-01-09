@@ -1,5 +1,6 @@
 import SendIcon from "@mui/icons-material/Send";
 
+import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { changeInputValue, submitMessage } from "../../actions";
@@ -10,6 +11,11 @@ const Form = () => {
   const inputValue = useSelector((state) => state.inputValue);
   const loginPseudo = useSelector((state) => state.login.pseudo);
   const dispatch = useDispatch();
+  const input = useRef();
+
+  useEffect(() => {
+    input.current.focus();
+  }, [loginPseudo]);
 
   return (
     <form
@@ -20,6 +26,7 @@ const Form = () => {
       }}
     >
       <input
+        ref={input}
         className="form-input"
         type="text"
         placeholder="Votre message..."

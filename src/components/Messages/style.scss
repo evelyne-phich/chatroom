@@ -1,0 +1,11 @@
+.messages {
+    padding: 16px;
+    .message {
+        .author {
+            font-weight: bold;
+        }
+        .content {
+            display: inline-block;
+        }
+    }
+}

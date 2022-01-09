@@ -1,11 +1,18 @@
 .messages {
     padding: 16px;
     .message {
+        margin-bottom: 12px;
         .author {
             font-weight: bold;
+            color: #BBE1FA;
+            margin-bottom: 8px;
         }
         .content {
             display: inline-block;
+            color: #3282B8;
+            background-color: white;
+            border-radius: 16px;
+            padding: 12px;
         }
     }
 }

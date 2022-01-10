@@ -6,7 +6,7 @@
     transition: 0.2s ease-in-out;
 
     &.closed {
-        right: -236px;
+        right: -280px;
 
         .login-toggle {
             transform: rotate(0deg);
@@ -17,7 +17,7 @@
     &-toggle {
         color: #0F4C75;
         background-color: #BBE1FA;
-        border: none;
+        border: 2px solid white;
         border-radius: 50px;
         width: 40px;
         height: 40px;
@@ -46,6 +46,10 @@
         display: flex;
         flex-direction: column;
         transition: 0.2s ease-in-out;
+        background-color: #3282B8;
+        border: 2px solid white;
+        padding: 12px;
+        border-radius: 16px;
 
         &-input {
             color: #3282B8;
@@ -79,7 +83,8 @@
         color: #0F4C75;
         text-align: center;
         font-weight: bold;
-        background-color: white;
+        background-color: #3282B8;
+        border: 2px solid white;
         border-radius: 16px;
         margin-top: 12px;
         padding: 12px;
@@ -100,10 +105,17 @@
         margin-left: 32px;
         display: flex;
         flex-direction: column;
+        background-color: #3282B8;
+        border: 2px solid white;
+        border-radius: 16px;
+        margin-top: 12px;
+        padding: 12px;
+
         &-message {
             color: white;
             font-weight: bold;
         }
+
         &-button {
             border: none;
             border-radius: 16px;

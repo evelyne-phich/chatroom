@@ -1,6 +1,9 @@
 .form {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 
     &-input {
         flex: 1;

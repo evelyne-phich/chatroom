@@ -37,7 +37,7 @@ const Form = () => {
           dispatch(changeInputValue(message));
         }}
       />
-      <button className="form-submit" type="submit">
+      <button className="form-submit" type="submit" disabled={!loginPseudo}>
         <SendIcon />
       </button>
     </form>
